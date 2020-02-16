@@ -1,0 +1,20 @@
+<div class="usersGrid">
+    <mat-card *ngFor="let user of users" style="margin:10px;width: 240px;">
+        <mat-card-header>
+            <mat-card-title>{{user.first_name}}</mat-card-title>
+            <mat-card-subtitle>{{user.email}}
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+                {{user.last_name}}
+            </p>
+            <p>
+                {{user.gender}}
+            </p>
+            <p>
+                {{user.ip_address}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>
